@@ -24,12 +24,18 @@ void		init_map(t_map *map)
 	map->enemy_pos_y = 0;
 }
 
-int		main(void)
+int		main()
+// int		main(int argc, char **argv)
 {
 	t_map	map;
+	t_ship	ship;
 
+	// argc = 0;
+	// map.fd = open(argv[1], O_RDONLY);
+	map.fd = 0;
 	init_map(&map);
 	read_map(&map);
+	read_ship(&map, &ship);
 	printf("%d %d\n", map.p, map.size_w);
 	return (0);
 }

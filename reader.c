@@ -15,16 +15,14 @@
 void	identify_p(t_map	*map)
 {
 	char	*line;
-	char	*name;
 
-	get_next_line(0, &line);
-	name = ft_strstr(line, "ykliek");
+	get_next_line(map->fd, &line);
 	if (ft_strncmp("$$$", line, 2) == 0 && map->p == 0)
-		map->p = (name) ? 1 : 2;
-	ft_strdel(&line);
+		map->p = (ft_strstr(line, "ykliek")) ? 1 : 2;
+	free(line);
 }
 
-void	identify_size(t_map *map)
+void	identify_map_size(t_map *map)
 {
 	char	*line;
 	int		count;
@@ -32,7 +30,7 @@ void	identify_size(t_map *map)
 
 	time = 0;
 	count = 0;
-	get_next_line(0, &line);
+	get_next_line(map->fd, &line);
 	while (line[count] != '\0')
 	{
 		if (line[count] >= '1' && line[count] <= '9' && time != 1)
@@ -44,7 +42,46 @@ void	identify_size(t_map *map)
 			map->size_w = ft_atoi(line + count - 1);
 		count++;
 	}
-	ft_strdel(&line);
+	free(line);
+}
+
+void	identify_ship_size(t_map *map, t_ship *ship)
+{
+	char	*line;
+	int		count;
+	int		time;
+
+	time = 0;
+	count = 0;
+	get_next_line(map->fd, &line);
+	while (line[count] != '\0')
+	{
+		if (line[count] >= '1' && line[count] <= '9' && time != 1)
+		{
+			ship->size_h = ft_atoi(line + count);
+			time = 1;
+		}
+		if (line[count] >= '1' && line[count] <= '9' && time == 1)
+			ship->size_w = ft_atoi(line + count - 1);
+		count++;
+	}
+	free(line);
+}
+
+void		read_ship(t_map *map, t_ship *ship)
+{
+	char	*line;	
+	int		height;
+
+	height = 0;
+	identify_ship_size(map, ship);
+	ship->ship = (char **)malloc(ship->size_h);
+	while (height < ship->size_h)
+	{
+		get_next_line(map->fd, &line);
+		ship->ship[height++] = ft_strdup(line);
+		free(line);
+	}
 }
 
 void		read_map(t_map *map)
@@ -53,15 +90,16 @@ void		read_map(t_map *map)
 	int		height;
 
 	identify_p(map);
-	identify_size(map);
-	get_next_line(0, &line);
-	ft_strdel(&line);
+	identify_map_size(map);
+	get_next_line(map->fd, &line);
+	free(line);
 	height = 0;
 	map->map = (char **)malloc(map->size_h);
 	while (height < map->size_h)
 	{
-		get_next_line(0, &line);
-		map->map[height++] = ft_strdup((char *)&line[4]);
-		ft_strdel(&line);
+		get_next_line(map->fd, &line);
+		map->map[height++] = ft_strjoin(line, "\0");
+		height++;
+		free(line);
 	}
 }

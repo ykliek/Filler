@@ -37,14 +37,21 @@ typedef struct	s_map
 	int			enemy_pos_x;
 	int			enemy_pos_y;
 	int			point_t;
+	int			fd;
 }				t_map;
 
 typedef	struct	s_ship
 {
-	int			x;
-	int			y;
+	char		**ship;
+	int			size_h;
+	int			size_w;
+	int			points;
 }				t_ship;
 
 void			read_map(t_map *map);
 
+void			read_ship(t_map *map, t_ship *ship);
+
 #endif
+
+// while [ 1 ]; do sleep 1 ; clear ; ./ykliek.filler test; done

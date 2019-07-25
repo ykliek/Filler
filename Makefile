@@ -25,7 +25,7 @@ all: $(NAME)
 
 $(NAME):
 	@make -C libft
-	@gcc $(FLAGS) $(SRCS) $(LIB) -I $(INCLUDE) -o $(NAME) 
+	@gcc $(FLAGS) $(SRCS) $(LIB) -o $(NAME)
 
 clean:
 	@rm -rf $(OBJ)
@@ -47,3 +47,5 @@ fcleanlib:
 relib:
 	make -C libft re
 
+filler:
+	@gcc $(FLAGS) $(SRCS) $(LIB) -I $(INCLUDE) -o $(NAME)
