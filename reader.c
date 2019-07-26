@@ -12,6 +12,20 @@
 
 #include "filler.h"
 
+void		which_symbol(t_map *map)
+{
+	if (map->p == 1)
+	{
+		map->me = ft_strdup("Oo");
+		map->me = ft_strdup("Xx");
+	}
+	if (map->p == 0)
+	{
+		map->me = ft_strdup("Xx");
+		map->me = ft_strdup("Oo");
+	}
+}
+
 void	identify_p(t_map	*map)
 {
 	char	*line;
@@ -45,7 +59,7 @@ void	identify_map_size(t_map *map)
 	free(line);
 }
 
-void	identify_ship_size(t_map *map, t_ship *ship)
+void	identify_ship_size(t_map *map, t_token *ship)
 {
 	char	*line;
 	int		count;
@@ -68,18 +82,18 @@ void	identify_ship_size(t_map *map, t_ship *ship)
 	free(line);
 }
 
-void		read_ship(t_map *map, t_ship *ship)
+void		read_token(t_map *map, t_token *token)
 {
 	char	*line;	
 	int		height;
 
 	height = 0;
-	identify_ship_size(map, ship);
-	ship->ship = (char **)malloc(ship->size_h);
-	while (height < ship->size_h)
+	identify_ship_size(map, token);
+	token->token = (char **)malloc(token->size_h);
+	while (height < token->size_h)
 	{
 		get_next_line(map->fd, &line);
-		ship->ship[height++] = ft_strdup(line);
+		token->token[height++] = ft_strdup(line);
 		free(line);
 	}
 }
@@ -98,8 +112,38 @@ void		read_map(t_map *map)
 	while (height < map->size_h)
 	{
 		get_next_line(map->fd, &line);
-		map->map[height++] = ft_strjoin(line, "\0");
+		map->map[height++] = ft_strdup(&line[4]);
 		height++;
 		free(line);
 	}
 }
+
+void		reader(t_map *map, t_token *token)
+{
+	char	*line;
+
+	while (get_next_line(map->fd, &line) > 0)
+	{
+		if (ft_strncmp("Plateau", line, 6) == 0)
+		{
+			read_map(map);
+			ft_strdel(&line);
+		}
+		if (ft_strncmp("Piece", line, 4) == 0)
+		{
+			read_token(map, token);
+			ft_strdel(&line);
+		}
+		else
+			ft_strdel(&line);
+	}
+}
+
+
+
+
+
+
+
+
+

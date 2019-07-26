@@ -40,17 +40,17 @@ typedef struct	s_map
 	int			fd;
 }				t_map;
 
-typedef	struct	s_ship
+typedef	struct	s_token
 {
-	char		**ship;
+	char		**token;
 	int			size_h;
 	int			size_w;
 	int			points;
-}				t_ship;
+}				t_token;
 
-void			read_map(t_map *map);
+void			reader(t_map *map, t_token *token);
 
-void			read_ship(t_map *map, t_ship *ship);
+void			identify_p(t_map	*map);
 
 #endif
 

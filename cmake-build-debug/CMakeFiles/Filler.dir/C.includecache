@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ykliek/Desktop/Filler/libft/ft_strncmp.c
+libft.h
+/Users/ykliek/Desktop/Filler/libft/libft.h
+
+/Users/ykliek/Desktop/Filler/libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+string.h
+-
+stdarg.h
+-
+

@@ -6,7 +6,7 @@
 #    By: ykliek <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/24 07:50:01 by ykliek            #+#    #+#              #
-#    Updated: 2019/07/24 07:50:02 by ykliek           ###   ########.fr        #
+#    Updated: 2019/07/26 12:27:26 by ykliek           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,4 +48,4 @@ relib:
 	make -C libft re
 
 filler:
-	@gcc $(FLAGS) $(SRCS) $(LIB) -I $(INCLUDE) -o $(NAME)
+	@gcc $(FLAGS) $(SRCS) $(LIB) -o $(NAME)
