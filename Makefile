@@ -12,12 +12,17 @@
 
 NAME = ykliek.filler
 
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra -g -fsanitize=address
 
 LIB = libft/libft.a
 
 SRCS = main.c \
-		reader.c
+		reader.c \
+		algorithm.c \
+		check.c \
+		distance.c \
+		tools.c \
+		identify_size.c
 
 INCLUDE = ./includes/fdf.h
 
@@ -47,5 +52,7 @@ fcleanlib:
 relib:
 	make -C libft re
 
+# filler:
+# 	@gcc $(FLAGS) $(SRCS) $(LIB) -o $(NAME)
 filler:
-	@gcc $(FLAGS) $(SRCS) $(LIB) -o $(NAME)
+	@gcc $(SRCS) $(LIB) -o $(NAME)

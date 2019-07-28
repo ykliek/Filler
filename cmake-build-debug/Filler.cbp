@@ -82,10 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ykliek/Desktop/Filler/filler.c">
+		<Unit filename="/Users/ykliek/Desktop/Filler/algorithm.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/ykliek/Desktop/Filler/check.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/ykliek/Desktop/Filler/distance.c">
 			<Option target="Filler"/>
 		</Unit>
 		<Unit filename="/Users/ykliek/Desktop/Filler/filler.h">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/ykliek/Desktop/Filler/identify_size.c">
 			<Option target="Filler"/>
 		</Unit>
 		<Unit filename="/Users/ykliek/Desktop/Filler/libft/colors.c">
@@ -299,6 +308,9 @@
 			<Option target="Filler"/>
 		</Unit>
 		<Unit filename="/Users/ykliek/Desktop/Filler/reader.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/ykliek/Desktop/Filler/tools.c">
 			<Option target="Filler"/>
 		</Unit>
 		<Unit filename="/Users/ykliek/Desktop/Filler/CMakeLists.txt">

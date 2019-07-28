@@ -76,7 +76,11 @@ add_executable(Filler
         libft/parser.c
         libft/precision.c
         libft/weigth_n_flags.c
-        filler.c
         filler.h
         main.c
-        reader.c)
+        reader.c
+        algorithm.c
+        check.c
+        distance.c
+        identify_size.c
+        tools.c)

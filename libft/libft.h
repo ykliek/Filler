@@ -21,7 +21,7 @@
 # include <string.h>
 # include <stdarg.h>
 
-# define BUFF_SIZE 1
+# define BUFF_SIZE 10
 # define DIFF(x, y) ((x > y) ? x - y : 0)
 # define TEG(str, end) ((str[end] == 'x') ? "0x" : "0X")
 # define CHECKM(a) ((a < 0) ? 4294967296 : 0)

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		cmp(char *str1, char *str2, int n)
+int		cmp(unsigned char *str1, unsigned char *str2, int n)
 {
 	int		count_1;
 

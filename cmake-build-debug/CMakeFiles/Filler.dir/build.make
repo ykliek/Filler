@@ -941,22 +941,9 @@ CMakeFiles/Filler.dir/libft/weigth_n_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/libft/weigth_n_flags.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/libft/weigth_n_flags.c -o CMakeFiles/Filler.dir/libft/weigth_n_flags.c.s
 
-CMakeFiles/Filler.dir/filler.c.o: CMakeFiles/Filler.dir/flags.make
-CMakeFiles/Filler.dir/filler.c.o: ../filler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Filler.dir/filler.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/filler.c.o   -c /Users/ykliek/Desktop/Filler/filler.c
-
-CMakeFiles/Filler.dir/filler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/filler.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ykliek/Desktop/Filler/filler.c > CMakeFiles/Filler.dir/filler.c.i
-
-CMakeFiles/Filler.dir/filler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/filler.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/filler.c -o CMakeFiles/Filler.dir/filler.c.s
-
 CMakeFiles/Filler.dir/main.c.o: CMakeFiles/Filler.dir/flags.make
 CMakeFiles/Filler.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Filler.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Filler.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/main.c.o   -c /Users/ykliek/Desktop/Filler/main.c
 
 CMakeFiles/Filler.dir/main.c.i: cmake_force
@@ -969,7 +956,7 @@ CMakeFiles/Filler.dir/main.c.s: cmake_force
 
 CMakeFiles/Filler.dir/reader.c.o: CMakeFiles/Filler.dir/flags.make
 CMakeFiles/Filler.dir/reader.c.o: ../reader.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Filler.dir/reader.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Filler.dir/reader.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/reader.c.o   -c /Users/ykliek/Desktop/Filler/reader.c
 
 CMakeFiles/Filler.dir/reader.c.i: cmake_force
@@ -979,6 +966,71 @@ CMakeFiles/Filler.dir/reader.c.i: cmake_force
 CMakeFiles/Filler.dir/reader.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/reader.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/reader.c -o CMakeFiles/Filler.dir/reader.c.s
+
+CMakeFiles/Filler.dir/algorithm.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/algorithm.c.o: ../algorithm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Filler.dir/algorithm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/algorithm.c.o   -c /Users/ykliek/Desktop/Filler/algorithm.c
+
+CMakeFiles/Filler.dir/algorithm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/algorithm.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ykliek/Desktop/Filler/algorithm.c > CMakeFiles/Filler.dir/algorithm.c.i
+
+CMakeFiles/Filler.dir/algorithm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/algorithm.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/algorithm.c -o CMakeFiles/Filler.dir/algorithm.c.s
+
+CMakeFiles/Filler.dir/check.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/check.c.o: ../check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Filler.dir/check.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/check.c.o   -c /Users/ykliek/Desktop/Filler/check.c
+
+CMakeFiles/Filler.dir/check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/check.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ykliek/Desktop/Filler/check.c > CMakeFiles/Filler.dir/check.c.i
+
+CMakeFiles/Filler.dir/check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/check.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/check.c -o CMakeFiles/Filler.dir/check.c.s
+
+CMakeFiles/Filler.dir/distance.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/distance.c.o: ../distance.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/Filler.dir/distance.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/distance.c.o   -c /Users/ykliek/Desktop/Filler/distance.c
+
+CMakeFiles/Filler.dir/distance.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/distance.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ykliek/Desktop/Filler/distance.c > CMakeFiles/Filler.dir/distance.c.i
+
+CMakeFiles/Filler.dir/distance.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/distance.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/distance.c -o CMakeFiles/Filler.dir/distance.c.s
+
+CMakeFiles/Filler.dir/identify_size.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/identify_size.c.o: ../identify_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/Filler.dir/identify_size.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/identify_size.c.o   -c /Users/ykliek/Desktop/Filler/identify_size.c
+
+CMakeFiles/Filler.dir/identify_size.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/identify_size.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ykliek/Desktop/Filler/identify_size.c > CMakeFiles/Filler.dir/identify_size.c.i
+
+CMakeFiles/Filler.dir/identify_size.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/identify_size.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/identify_size.c -o CMakeFiles/Filler.dir/identify_size.c.s
+
+CMakeFiles/Filler.dir/tools.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/tools.c.o: ../tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/Filler.dir/tools.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/tools.c.o   -c /Users/ykliek/Desktop/Filler/tools.c
+
+CMakeFiles/Filler.dir/tools.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/tools.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ykliek/Desktop/Filler/tools.c > CMakeFiles/Filler.dir/tools.c.i
+
+CMakeFiles/Filler.dir/tools.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/tools.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ykliek/Desktop/Filler/tools.c -o CMakeFiles/Filler.dir/tools.c.s
 
 # Object files for target Filler
 Filler_OBJECTS = \
@@ -1050,9 +1102,13 @@ Filler_OBJECTS = \
 "CMakeFiles/Filler.dir/libft/parser.c.o" \
 "CMakeFiles/Filler.dir/libft/precision.c.o" \
 "CMakeFiles/Filler.dir/libft/weigth_n_flags.c.o" \
-"CMakeFiles/Filler.dir/filler.c.o" \
 "CMakeFiles/Filler.dir/main.c.o" \
-"CMakeFiles/Filler.dir/reader.c.o"
+"CMakeFiles/Filler.dir/reader.c.o" \
+"CMakeFiles/Filler.dir/algorithm.c.o" \
+"CMakeFiles/Filler.dir/check.c.o" \
+"CMakeFiles/Filler.dir/distance.c.o" \
+"CMakeFiles/Filler.dir/identify_size.c.o" \
+"CMakeFiles/Filler.dir/tools.c.o"
 
 # External object files for target Filler
 Filler_EXTERNAL_OBJECTS =
@@ -1125,12 +1181,16 @@ Filler: CMakeFiles/Filler.dir/libft/modifiers.c.o
 Filler: CMakeFiles/Filler.dir/libft/parser.c.o
 Filler: CMakeFiles/Filler.dir/libft/precision.c.o
 Filler: CMakeFiles/Filler.dir/libft/weigth_n_flags.c.o
-Filler: CMakeFiles/Filler.dir/filler.c.o
 Filler: CMakeFiles/Filler.dir/main.c.o
 Filler: CMakeFiles/Filler.dir/reader.c.o
+Filler: CMakeFiles/Filler.dir/algorithm.c.o
+Filler: CMakeFiles/Filler.dir/check.c.o
+Filler: CMakeFiles/Filler.dir/distance.c.o
+Filler: CMakeFiles/Filler.dir/identify_size.c.o
+Filler: CMakeFiles/Filler.dir/tools.c.o
 Filler: CMakeFiles/Filler.dir/build.make
 Filler: CMakeFiles/Filler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable Filler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ykliek/Desktop/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Linking C executable Filler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Filler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

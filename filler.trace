@@ -1,3 +1,5 @@
-seed = 7342
-O: error on input
-./ykliek.filler: Segfault at 0
+seed = 2768
+X: error on input
+./resources/players/carli.filler won
+Score:
+4AGAINST3

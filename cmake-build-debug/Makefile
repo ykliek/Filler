@@ -123,32 +123,113 @@ Filler/fast:
 	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/build
 .PHONY : Filler/fast
 
-filler.o: filler.c.o
+algorithm.o: algorithm.c.o
 
-.PHONY : filler.o
+.PHONY : algorithm.o
 
 # target to build an object file
-filler.c.o:
-	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/filler.c.o
-.PHONY : filler.c.o
+algorithm.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/algorithm.c.o
+.PHONY : algorithm.c.o
 
-filler.i: filler.c.i
+algorithm.i: algorithm.c.i
 
-.PHONY : filler.i
+.PHONY : algorithm.i
 
 # target to preprocess a source file
-filler.c.i:
-	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/filler.c.i
-.PHONY : filler.c.i
+algorithm.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/algorithm.c.i
+.PHONY : algorithm.c.i
 
-filler.s: filler.c.s
+algorithm.s: algorithm.c.s
 
-.PHONY : filler.s
+.PHONY : algorithm.s
 
 # target to generate assembly for a file
-filler.c.s:
-	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/filler.c.s
-.PHONY : filler.c.s
+algorithm.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/algorithm.c.s
+.PHONY : algorithm.c.s
+
+check.o: check.c.o
+
+.PHONY : check.o
+
+# target to build an object file
+check.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/check.c.o
+.PHONY : check.c.o
+
+check.i: check.c.i
+
+.PHONY : check.i
+
+# target to preprocess a source file
+check.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/check.c.i
+.PHONY : check.c.i
+
+check.s: check.c.s
+
+.PHONY : check.s
+
+# target to generate assembly for a file
+check.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/check.c.s
+.PHONY : check.c.s
+
+distance.o: distance.c.o
+
+.PHONY : distance.o
+
+# target to build an object file
+distance.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/distance.c.o
+.PHONY : distance.c.o
+
+distance.i: distance.c.i
+
+.PHONY : distance.i
+
+# target to preprocess a source file
+distance.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/distance.c.i
+.PHONY : distance.c.i
+
+distance.s: distance.c.s
+
+.PHONY : distance.s
+
+# target to generate assembly for a file
+distance.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/distance.c.s
+.PHONY : distance.c.s
+
+identify_size.o: identify_size.c.o
+
+.PHONY : identify_size.o
+
+# target to build an object file
+identify_size.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/identify_size.c.o
+.PHONY : identify_size.c.o
+
+identify_size.i: identify_size.c.i
+
+.PHONY : identify_size.i
+
+# target to preprocess a source file
+identify_size.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/identify_size.c.i
+.PHONY : identify_size.c.i
+
+identify_size.s: identify_size.c.s
+
+.PHONY : identify_size.s
+
+# target to generate assembly for a file
+identify_size.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/identify_size.c.s
+.PHONY : identify_size.c.s
 
 libft/colors.o: libft/colors.c.o
 
@@ -2040,6 +2121,33 @@ reader.c.s:
 	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/reader.c.s
 .PHONY : reader.c.s
 
+tools.o: tools.c.o
+
+.PHONY : tools.o
+
+# target to build an object file
+tools.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/tools.c.o
+.PHONY : tools.c.o
+
+tools.i: tools.c.i
+
+.PHONY : tools.i
+
+# target to preprocess a source file
+tools.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/tools.c.i
+.PHONY : tools.c.i
+
+tools.s: tools.c.s
+
+.PHONY : tools.s
+
+# target to generate assembly for a file
+tools.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/tools.c.s
+.PHONY : tools.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2049,9 +2157,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Filler"
-	@echo "... filler.o"
-	@echo "... filler.i"
-	@echo "... filler.s"
+	@echo "... algorithm.o"
+	@echo "... algorithm.i"
+	@echo "... algorithm.s"
+	@echo "... check.o"
+	@echo "... check.i"
+	@echo "... check.s"
+	@echo "... distance.o"
+	@echo "... distance.i"
+	@echo "... distance.s"
+	@echo "... identify_size.o"
+	@echo "... identify_size.i"
+	@echo "... identify_size.s"
 	@echo "... libft/colors.o"
 	@echo "... libft/colors.i"
 	@echo "... libft/colors.s"
@@ -2262,6 +2379,9 @@ help:
 	@echo "... reader.o"
 	@echo "... reader.i"
 	@echo "... reader.s"
+	@echo "... tools.o"
+	@echo "... tools.i"
+	@echo "... tools.s"
 .PHONY : help
 
 

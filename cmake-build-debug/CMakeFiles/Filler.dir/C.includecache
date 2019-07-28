@@ -6,9 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/ykliek/Desktop/Filler/libft/ft_strncmp.c
-libft.h
+/Users/ykliek/Desktop/Filler/algorithm.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
+
+/Users/ykliek/Desktop/Filler/check.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
+
+/Users/ykliek/Desktop/Filler/distance.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
+
+/Users/ykliek/Desktop/Filler/filler.h
+stdio.h
+-
+libft/libft.h
 /Users/ykliek/Desktop/Filler/libft/libft.h
+
+/Users/ykliek/Desktop/Filler/identify_size.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
 
 /Users/ykliek/Desktop/Filler/libft/libft.h
 unistd.h
@@ -25,4 +43,16 @@ string.h
 -
 stdarg.h
 -
+
+/Users/ykliek/Desktop/Filler/main.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
+
+/Users/ykliek/Desktop/Filler/reader.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
+
+/Users/ykliek/Desktop/Filler/tools.c
+filler.h
+/Users/ykliek/Desktop/Filler/filler.h
 

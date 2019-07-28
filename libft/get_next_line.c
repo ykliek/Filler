@@ -12,70 +12,74 @@
 
 #include "libft.h"
 
-char			*find_new_line(char *str)
+char	*add_newline(char *s, int len)
 {
-	int			i;
-	int			len;
-	char		*new;
+	int		count;
+	char	*sub;
 
-	i = 0;
-	len = 0;
-	while (str[len++])
-		;
-	if (!(new = (char *)malloc(sizeof(*new) * len + 1)))
-		return (NULL);
-	while (i < len && str[i] != '\n')
+	sub = ft_strnew(len);
+	count = 0;
+	if (s)
 	{
-		new[i] = str[i];
-		i++;
+		while (count < len)
+		{
+			sub[count] = s[count];
+			count++;
+		}
+		sub[count] = '\0';
+		return (sub);
 	}
-	new[i] = '\0';
-	return (new);
+	return (NULL);
 }
 
-static char		*clean_new(char *str)
+int		get_every_line(int fd, int tmp, char **str, char **line)
 {
-	char		*new;
-	int			i;
+	int		count;
+	char	*str1;
 
-	i = 0;
-	while (str[i] != '\n' && str[i])
-		i++;
-	if ((str[i] && !str[i + 1]) || !str[i])
+	count = 0;
+	while (str[fd][count] != '\n' && str[fd][count] != '\0')
+		count++;
+	if (str[fd][count] == '\n')
 	{
-		ft_strdel(&str);
-		return (NULL);
+		*line = add_newline(str[fd], count);
+		str1 = ft_strdup(str[fd] + count + 1);
+		free(str[fd]);
+		str[fd] = str1;
 	}
-	new = ft_strdup(str + i + 1);
-	ft_strdel(&str);
-	return (new);
-}
-
-int				get_next_line(const int fd, char **line)
-{
-	char		buff[BUFF_SIZE + 1];
-	int			ret;
-	static char	*new;
-
-	if (!new)
-		new = ft_strnew(1);
-	if (BUFF_SIZE < 0 || !line || fd < 0)
-		return (-1);
-	ret = 2;
-	while (!(ft_strchr(new, '\n')))
+	else if (str[fd][count] == '\0')
 	{
-		ret = read(fd, buff, BUFF_SIZE);
-		if (ret == -1)
-			return (-1);
-		buff[ret] = '\0';
-		new = ft_strjoin(new, buff);
-		if (ret == 0 && *new == '\0')
-			return (0);
-		if (ret == 0)
-			break ;
+		if (tmp == BUFF_SIZE)
+			return (get_next_line(fd, line));
+		*line = ft_strdup(str[fd]);
+		ft_strdel(&str[fd]);
 	}
-	*line = find_new_line(new);
-	new = clean_new(new);
 	return (1);
 }
 
+int		get_next_line(const int fd, char **line)
+{
+	char			buf[BUFF_SIZE + 1];
+	char			*str;
+	int				tmp;
+	static	char	*str1[0xffffffff];
+
+	if (fd < 0 || line == NULL)
+		return (-1);
+	while ((tmp = read(fd, buf, BUFF_SIZE)) > 0)
+	{
+		buf[tmp] = '\0';
+		if (str1[fd] == NULL)
+			str1[fd] = ft_strnew(1);
+		str = ft_strjoin(str1[fd], buf);
+		free(str1[fd]);
+		str1[fd] = str;
+		if (ft_strchr(buf, '\n'))
+			break ;
+	}
+	if (tmp < 0)
+		return (-1);
+	else if (tmp == 0 && (str1[fd] == NULL || str1[fd][0] == '\0'))
+		return (0);
+	return (get_every_line(fd, tmp, str1, line));
+}
